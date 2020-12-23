@@ -14,7 +14,7 @@ class Piece(Hexagon):
     def is_white(self):
         return self.color == 0
 
-    def possible_moves(self):
+    def move(self, new_x, new_y):
         pass
 
     def __str__(self):
