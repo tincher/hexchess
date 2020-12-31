@@ -20,3 +20,6 @@ class Piece(Hexagon):
     def __str__(self):
         char = self.char.capitalize() if self.is_white() else self.char
         return char + str(self.position)
+
+    def __repr__(self):
+        return str(self)

@@ -13,3 +13,11 @@ class Position:
 
     def __repr__(self):
         return str(self)
+
+    def __hash__(self):
+        return hash((self.x, self.y))
+
+    def __eq__(self, other):
+        if isinstance(other, Position):
+            return self.x == other.x and self.y == other.y
+        return False
